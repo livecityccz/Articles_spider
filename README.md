@@ -47,3 +47,7 @@ python articles_spider.py --only-tags "A,B" --threads 1
 ```bash
 python articles_spider.py --no-resume
 ```
+
+运行图：
+
+![image-20250915185342872](README.assets/image-20250915185342872.png)
