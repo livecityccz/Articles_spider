@@ -17,7 +17,7 @@ from markdownify import markdownify as md
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
 
-BASE_TAG_URL = "https://www.cnblogs.com/chuchengzhi/tag/"
+BASE_TAG_URL = "https://www.cnblogs.com/chuchengzhi/tag/"           #默认地址
 DEFAULT_ROOT_DIR = "MyArticles"
 DEFAULT_HEADERS = {
     "User-Agent": (

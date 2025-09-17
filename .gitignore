@@ -1,5 +1,6 @@
 Articles/
-HTML片段/
-.venv/
+HTML/
+venv/
 tmp/
-.rename_articles.py
+rename_articles.py
+replace_text_simple.py
