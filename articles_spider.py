@@ -338,8 +338,7 @@ def get_done_marker_path(root_dir: str, tag_name: str, article_id: str) -> str:
 def save_article_to_markdown(root_dir: str, tag_name: str, title: str, markdown_content: str, article_id: Optional[str] = None) -> str:
     tag_dir = os.path.join(root_dir, sanitize_filename(tag_name))
     ensure_dir(tag_dir)
-    suffix = f" [p{article_id}]" if article_id else ""
-    filename = (sanitize_filename(title) or "untitled") + suffix
+    filename = sanitize_filename(title) or "untitled"
     path = os.path.join(tag_dir, f"{filename}.md")
 
     base, ext = os.path.splitext(path)
